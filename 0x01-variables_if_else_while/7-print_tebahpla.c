@@ -2,9 +2,13 @@
 
 /**
  * main - prints the lowercase alphabet in reverse,
+ *
  * followed by a new line
+ *
  * Return: Always 0 (Success)
  */
+
+
 int main(void)
 {
 	char letters;
@@ -13,6 +17,8 @@ int main(void)
 	{
 		putchar(letters);
 	}
+	
 	putchar('\n');
+	
 	return (0);
 }
