@@ -22,6 +22,5 @@ int main(void)
 		letters++;
 	}
 	putchar('\n');
-	
 	return (0);
 }
