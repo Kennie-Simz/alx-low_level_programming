@@ -12,13 +12,12 @@
 
 void print_alphabet(void)
 {
-
 int x;
 int lower_x;
 for (x = 'A'; x <= 'Z'; x++)
 {
-  lower_x = tolower(x);
-  _putchar(lower_x);
+lower_x = tolower(x);
+_putchar(lower_x);
 }
-  _putchar('\n');
+_putchar('\n');
 }
