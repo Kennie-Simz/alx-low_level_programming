@@ -8,7 +8,7 @@
  **/
 
 int main(void)
-  {
-      jack_bauer();
-      return (0);
-  }
+{
+jack_bauer();
+return (0);
+}
