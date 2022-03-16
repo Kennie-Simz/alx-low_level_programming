@@ -2,8 +2,9 @@
 
 
 /**
- *
  * main - causes an infinite loop
+ *
+ * Description: Solving the infinite loop
  *
  * Return: 0
  *
