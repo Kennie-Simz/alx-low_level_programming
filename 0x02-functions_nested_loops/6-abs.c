@@ -14,6 +14,6 @@
 **/
 
 int _abs(int n)
-  {
-    return (abs(n));
-  }
+{
+return (abs(n));
+}
