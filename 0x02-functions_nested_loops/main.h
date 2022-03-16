@@ -1,5 +1,4 @@
-#ifndef _MAIN_H
-#define _MAIN_H
+#pragma once
 
 int _putchar(char);
 
@@ -25,4 +24,4 @@ int add(int, int);
 
 void print_to_98(int n);
 
-#endif
+
