@@ -1,22 +1,22 @@
-nclude "main.h"
+#include "main.h"
 
 
 /**
- * *_memset - checks for uppercase character
- * @s: character to be checked
- * @b: random parameter
- * @n: extra random parameter
+ * _memset - fills memory with a constant byte
+ * @s: memory area to fill in
+ * @b: constant byte to fill s with
+ * @n: number of bytes to write
  *
- * Return: 1 if c is uppercase. 0 otherwise.
+ * Return: a pointer to the memory area s, otherwise return error
  *
  **/
 
-int *_memset(char *s, char b, unsigned int n)
+char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int i;
 
 	for (i = 0; i < n; i++)
 		s[i] = b;
 
-	return (s);
+	return (0);
 }
