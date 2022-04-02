@@ -30,12 +30,12 @@ int main(int argc, char **argv)
 	{
 		if (_is_valid_int(argv[i]))
 		{
-			total += atoi(argv[I]);
+			total += atoi(argv[i]);
 		}
 		else
 		{
-			printf("error\n"0);
-					return (1);
+			printf("error\n");
+			return (1);
 		}
 	}
 
