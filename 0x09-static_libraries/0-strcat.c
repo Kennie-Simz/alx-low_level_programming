@@ -11,5 +11,18 @@
 
 char *_strcat(char *dest, char *src)
 {
-	return (0);
+	char *new_dest = dest;
+
+	/* navigate to the end of dest */
+	while (*dest)
+		dest++;
+
+	/* copy all characters of src to dest */
+	while (*src)
+		*dest++ = *src++;
+
+	/* add terminating null byte */
+	*dest = '\0';
+
+	return (new_dest);
 }
