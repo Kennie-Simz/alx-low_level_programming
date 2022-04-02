@@ -1,2 +1,2 @@
-Lw_lvl_prgmng
-- This repository is a compilation of tasks and exercises in C
+ALX-Lw_Lvl_Programming Directory
+- This is a directory on lo low level programming exercises
