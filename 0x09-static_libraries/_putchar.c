@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _putchar - prints output
+ * _putchar - prints character c to output
  * @c: character given
  *
  * Return: Always 0
@@ -10,5 +10,5 @@
 
 int _putchar(char c)
 {
-	return (0);
+	return (write(1, &c, 1));
 }
