@@ -25,9 +25,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	/* initialize name field */
 	dog->name = _strcpy(name);
-	if (dog->name == NULL)
+	if (dog->name == NULL) 
 	{
-		free(dog);
+		free(dog->name);
 		return (NULL);
 	}
 
@@ -38,7 +38,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog->owner = _strcpy(owner);
 	if (dog->owner == NULL)
 	{
-		free(dog->name);
+		free(dog->owner);
 		free(dog);
 		return (NULL);
 	}
@@ -66,12 +66,12 @@ char *_strcpy(char *str)
 		return (NULL);
 
 	/* copy every character from str to new string */
-	for (i = 0; i < length; i++;
-
+	for (i = 0; i < length; i++)
+	{
 		copy[i] = str[i];
 		copy[i] = '\0';
+	}
 	return (copy);
-
 }
 
 /**
