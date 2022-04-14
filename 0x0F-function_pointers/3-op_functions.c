@@ -6,7 +6,8 @@
  * @b: 2nd integer
  *
  * Return: result of (a + b)
- */
+ **/
+
 int op_add(int a, int b)
 {
 	return (a + b);

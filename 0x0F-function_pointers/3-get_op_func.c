@@ -5,7 +5,8 @@
  * @s: operator passed as argument to the program
  *
  * Return: a pointer to the function that corresponds to s. Otherwise NULL
- */
+ **/
+
 int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
