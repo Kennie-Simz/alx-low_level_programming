@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
 
-unsigned int _strlength(char *s)
 /**
  * string_concat - concatenates two strings
  * @s1: string one
