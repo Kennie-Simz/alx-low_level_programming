@@ -4,7 +4,7 @@
 /**
  * delete_nodeint_at_index - deletes the node at a given position
  * @head: Double pointer to the actual position of the linked list (struct)
- * @index: Position of the node
+ * @index: Position of the node to delete
  *
  * Return: Status 1 on delete or -1 on no delete (error)
  *
@@ -12,33 +12,29 @@
 
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-	unsigned int i = 0;
-	listint_t *tmp = *head;
-	listint_t *node_to_delete;
+	unsigned int i;
+	listint_t *current, *next;
 
-	if (tmp == NULL)
+	if (head == NULL || *head == NULL)
 		return (-1);
 
 	if (index == 0)
 	{
-		*head = tmp->next;
-		free(tmp);
+		next =  (*head)->next;
+		free(*head);
+		*head = next;
 		return (1);
 	}
 
-	while (i < index)
+	current = *head;
+	for (i= 0; i < index - 1; i++)
 	{
-		tmp = tmp->next;
-		if (tmp == NULL)
+		if (current->next == NULL)
 			return (-1);
-		i++;
+		current = current->next;
 	}
-
-	node_to_delete = tmp->next;
-	tmp->n = tmp->next->n;
-	tmp->next = tmp->next->next;
-
-	free(node_to_delete);
-
+	next = current->next;
+	current->next = next->next;
+	free(next);
 	return (1);
 }
