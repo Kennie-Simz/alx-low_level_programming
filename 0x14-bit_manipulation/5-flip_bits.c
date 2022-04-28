@@ -3,9 +3,10 @@
 /**
  * flip_bits - number of different bits between two numbers
  * @n: first number
- * @n: second number
+ * @m: second number
  *
- * Return: number of bits you wold need to flip to get from one number to another
+ * Return: number of bits you wold need to flip
+ * to get from one number to another
  *
  **/
 
