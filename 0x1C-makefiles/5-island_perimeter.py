@@ -1,11 +1,10 @@
 #!/usr/bin/python3
+"""
+This function calculates the perimeter of a grid
+"""
 
 
 def island_perimeter(grid):
-    """
-    This function calculates the perimeter
-    of a grid
-    """
     p = 0
     for x in range(len(grid)):
         for y in range(len(grid[x])):
